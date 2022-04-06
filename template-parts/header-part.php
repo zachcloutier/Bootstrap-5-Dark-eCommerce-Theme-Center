@@ -4,13 +4,13 @@
         <div class="row">
 
 
-
-        <div class="col-lg-6 d-flex justify-content-center mb-3 mb-md-0 justify-content-lg-end">
-                <?php
+        <?php
                         $alertHead= trim( get_theme_mod('alert_head') );
                         $alertBody = trim( get_theme_mod('alert_body') );
                         
                         if ( $alertBody ) { ?>
+        <div class="col-lg-6 justify-content-center mb-3 mb-md-0">
+                
                 <div class="alert alert-danger alert-banner text-lg-end">
                     <div class="container-fluid">
                         <?php if ( $alertHead ) { ?>
@@ -30,10 +30,13 @@
                         <?php } ?>
                     </div>
                 </div>
-                <?php } ?>
             </div>
+                <?php } ?>
+
+
+
             <div
-                class="col-lg-6 d-flex justify-content-center mb-3 mb-md-0 ">
+                class="col-lg-6 justify-content-center mb-3 mb-md-0 ">
                 <a class="navbar-brand me-2" href="/">
                     <?php
                         $custom_logo_id = get_theme_mod( 'custom_logo' );
