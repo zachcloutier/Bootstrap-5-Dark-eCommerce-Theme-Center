@@ -5,18 +5,7 @@
 
 
 
-
-            <div
-                class="order-2 order-lg-1  col-lg-6 d-flex justify-content-center justify-content-lg-start mb-3 mb-md-0 ">
-                <a class="navbar-brand me-2" href="/">
-                    <?php
-                        $custom_logo_id = get_theme_mod( 'custom_logo' );
-                        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                    ?>
-                    <img src="<?php echo $image[0]; ?>" class="custom-logo" alt="" loading="lazy" />
-                </a>
-            </div>
-            <div class="order-1 order-lg-2 col-lg-6 d-flex justify-content-center mb-3 mb-md-0 justify-content-lg-end">
+        <div class="col-lg-6 d-flex justify-content-center mb-3 mb-md-0 justify-content-lg-end">
                 <?php
                         $alertHead= trim( get_theme_mod('alert_head') );
                         $alertBody = trim( get_theme_mod('alert_body') );
@@ -43,6 +32,17 @@
                 </div>
                 <?php } ?>
             </div>
+            <div
+                class="col-lg-6 d-flex justify-content-center mb-3 mb-md-0 ">
+                <a class="navbar-brand me-2" href="/">
+                    <?php
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                    ?>
+                    <img src="<?php echo $image[0]; ?>" class="custom-logo" alt="" loading="lazy" />
+                </a>
+            </div>
+            
         </div>
     </div>
 </div>
