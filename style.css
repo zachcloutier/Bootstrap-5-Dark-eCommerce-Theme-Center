@@ -3,7 +3,7 @@ Theme Name: Bootstarp 5 Dark eCommerce Center
 GitHub Theme URI: https://github.com/zachcloutier/Bootstrap-5-Dark-eCommerce-Theme-Center
 Author: zcloutier
 Description: Dark eCommerce Theme Based on Bootstrap 5
-Version: 1.6.9
+Version: 1.6.10
 */
 
 div.product .woocommerce-product-rating {
@@ -512,5 +512,5 @@ a.add_to_wishlist:hover{
 
   .woosb-alert{
     border-left: 4px solid #640!important;
-    background-color: #e6d6b8!important;
+    background-color: #ffa900!important;
   }
