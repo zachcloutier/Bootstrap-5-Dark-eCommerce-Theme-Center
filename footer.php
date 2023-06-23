@@ -54,11 +54,14 @@
                     <a class="mx-3 text-reset"
                        href="<?php echo $linkedin_link; ?>"
                     ><i class="fab fa-linkedin"></i></a>
-                <?php } ?><!-- TikTok -->
-                    <a class="mx-3 text-reset"
-                       href="<?php echo $tiktok_link; ?>"
-                    ><i class="fab fa-tiktok"></i></a>
                 <?php } ?>
+                <?php if ( $tiktok_link ) { ?>
+
+<!-- TikTok -->
+<a class="mx-3 text-reset"
+   href="<?php echo $tiktok_link; ?>"
+><i class="fab fa-tiktok"></i></a>
+<?php } ?>
             </div>
         <?php } ?>
 
