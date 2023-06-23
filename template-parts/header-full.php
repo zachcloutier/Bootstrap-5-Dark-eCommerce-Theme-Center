@@ -23,7 +23,7 @@
                         <h1 class="mb-3"><?= $mdb_homepage_title; ?></h1>
                     <?php
                     }
-                    if($$mdb_homepage_subtitle){
+                    if($mdb_homepage_subtitle){
                         ?>
                         <h4 class="mb-4"><?= $mdb_homepage_subtitle; ?></h4>
                     <?php
