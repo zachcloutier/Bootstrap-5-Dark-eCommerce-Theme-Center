@@ -4,13 +4,14 @@
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
         <?php
         $facebook_link = trim( get_theme_mod('mdb_facebook_link') );
+        $tiktok_link = trim( get_theme_mod('mdb_tiktok_link') );
         $twitter_link = trim( get_theme_mod('mdb_twitter_link') );
         $pinterest_link = trim( get_theme_mod('mdb_pinterest_link') );
         $youtube_link = trim( get_theme_mod('mdb_youtube_link') );
         $instagram_link = trim( get_theme_mod('mdb_instagram_link') );
         $linkedin_link = trim( get_theme_mod('mdb_linkedin_link') );
 
-        if ( $facebook_link || $twitter_link || $pinterest_link || $youtube_link || $instagram_link || $linkedin_link ) {
+        if ( $facebook_link || $tiktok_link|| $twitter_link || $pinterest_link || $youtube_link || $instagram_link || $linkedin_link ) {
             ?>
             <div class="me-5 d-none d-lg-block">
                 <span>Get connected with us on social networks:</span>
@@ -53,6 +54,10 @@
                     <a class="mx-3 text-reset"
                        href="<?php echo $linkedin_link; ?>"
                     ><i class="fab fa-linkedin"></i></a>
+                <?php } ?><!-- TikTok -->
+                    <a class="mx-3 text-reset"
+                       href="<?php echo $tiktok_link; ?>"
+                    ><i class="fab fa-tiktok"></i></a>
                 <?php } ?>
             </div>
         <?php } ?>

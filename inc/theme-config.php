@@ -73,6 +73,10 @@ function starter_customize_register( $wp_customize ) {
         'default'   => '',
     ) );
 
+    $wp_customize->add_setting( 'mdb_tiktok_link' , array(
+        'default'   => '',
+    ) );
+
     $wp_customize->add_setting( 'mdb_twitter_link' , array(
         'default'   => '',
     ) );
@@ -91,6 +95,11 @@ function starter_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'mdb_facebook_link', array(
         'label'   => 'Facebook',
+        'section' => 'mdb_social_links',
+        'type'    => 'text',
+    ));
+    $wp_customize->add_control( 'mdb_tiktok_link', array(
+        'label'   => 'TikTok',
         'section' => 'mdb_social_links',
         'type'    => 'text',
     ));
